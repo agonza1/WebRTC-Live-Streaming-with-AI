@@ -1,0 +1,33 @@
+{
+  "name": "webrtc-live-streaming",
+  "version": "1.0.0",
+  "description": "webrtc one to many live streaming using Janus\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dwith image detection using Janus and OpenCV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agonza1/WebRTC-Live-Streaming.git"
+  },
+  "keywords": [
+    "webrtc",
+    "live",
+    "streaming",
+    "ml",
+    "video",
+    "janus",
+    "opencv"
+  ],
+  "author": "agonza1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agonza1/WebRTC-Live-Streaming/issues"
+  },
+  "homepage": "https://github.com/agonza1/WebRTC-Live-Streaming#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  }
+}
