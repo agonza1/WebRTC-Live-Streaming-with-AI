@@ -1,4 +1,3 @@
-
 const cv = require('opencv4nodejs');
 
 async function main() {
@@ -27,7 +26,7 @@ async function main() {
 
   }, 100);
 
-  w.release();
+  // w.release();
   //child.stdout.pipe(res);
 }
 

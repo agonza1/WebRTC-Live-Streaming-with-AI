@@ -34,4 +34,12 @@ And then
 
 `node index.js`
 
+(It should just convert the video to black and white)
+
+Another demo is the videoFaceDetection.js
+
+# WARNING
+
+This is a work in progess, there is something wrong with the transcoding now so it doesn't completely work
+
 
