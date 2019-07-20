@@ -1,7 +1,7 @@
 const cv = require('opencv4nodejs');
 const {
     getDataFilePath
-} = require('../utils');
+} = require('utils');
 
 const { runVideoFaceDetection } = require('./commons');
 

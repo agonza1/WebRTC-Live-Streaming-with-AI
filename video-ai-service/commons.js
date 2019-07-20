@@ -2,7 +2,7 @@ const cv = require('opencv4nodejs');
 const {
     grabFrames,
     drawBlueRect
-} = require('../utils');
+} = require('./utils');
 
 //src can be a gstreamer command
 exports.runVideoFaceDetection = (src, detectFaces) => grabFrames(src, 1, (frame) => {
