@@ -1,0 +1,14 @@
+{
+  "name": "video-ai-service",
+  "version": "1.0.0",
+  "description": "RTP opencv video processing and streaming forwarder",
+  "main": "index.js",
+  "dependencies": {
+    "opencv4nodejs": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Alberto Gonzalez Trastoy"
+}

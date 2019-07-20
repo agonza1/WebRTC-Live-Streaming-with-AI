@@ -1,14 +1,14 @@
 # WebRTC-Live-Streaming
 One RTP video stream to many WebRTC clients with real time image detection using Janus and OpenCV
 
-##Dependencies
+## Dependencies
 - NodeJS
 - Janus WebRTC Gateway
 
 For the Janus media server you can run the docker here: 
 https://github.com/agonza1/janus_gateway/tree/live_streaming
 
-##Starting and debugging
+## Starting and debugging
 
 `npm install`
 
