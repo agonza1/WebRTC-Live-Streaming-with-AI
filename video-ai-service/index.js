@@ -17,7 +17,7 @@ async function main() {
     console.log(frame);
 
     console.error('will write frame');
-    w.write(frame.bgrToGray());
+    w.write(frame);
     console.error('has written frame');
 
     frame.release();
