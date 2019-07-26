@@ -18,7 +18,7 @@ exports.runVideoFaceDetection = (src, detectFaces) => grabFrames(src, 1, (frame)
     }
     // cv.imshow('face detection', frame);
     console.log('writing frame');
-    w.write(frameResized);
+    w.write(frame);
     console.log('wrote frame');
     console.timeEnd('detection time');
 });
