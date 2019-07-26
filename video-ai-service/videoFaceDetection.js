@@ -11,11 +11,10 @@ const videoIn = 'udpsrc port=5000 ! application/x-rtp,format=BGR,payload=96 ! rt
 const classifier = new cv.CascadeClassifier(cv.HAAR_FRONTALFACE_ALT2);
 
 function detectFaces(img) {
-    // restrict minSize and scaleFactor for faster processing
+    // we restrict minSize and scaleFactor for faster processing
     const options = {
-        // minSize: new cv.Size(40, 40),
-        // scaleFactor: 1.2,
-        scaleFactor: 1.1,
+        minSize: new cv.Size(40, 40),
+        scaleFactor: 1.15,
         minNeighbors: 10
     };
     return classifier.detectMultiScale(img.bgrToGray(), options).objects;

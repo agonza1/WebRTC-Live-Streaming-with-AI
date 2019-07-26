@@ -24,7 +24,6 @@ async function main() {
     // w.release();
 
   }, 40);
-
   // w.release();
   //child.stdout.pipe(res);
 }
