@@ -20,4 +20,5 @@ function detectFaces(img) {
     return classifier.detectMultiScale(img.bgrToGray(), options).objects;
 }
 
+// TODO
 runVideoFaceDetection(videoIn, detectFaces);
