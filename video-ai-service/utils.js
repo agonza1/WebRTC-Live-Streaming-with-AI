@@ -5,6 +5,9 @@ const dataPath = path.resolve(__dirname, 'data');
 exports.dataPath = dataPath;
 exports.getDataFilePath = fileName => path.resolve(dataPath, fileName);
 
+const img = this.getDataFilePath('mountain-hat-got.png');
+let matOverlayImage = cv.imread(img);
+
 const grabFrames = (videoFile, delay, onFrame) => {
     const cap = new cv.VideoCapture(videoFile);
     let done = false;
@@ -58,13 +61,22 @@ exports.drawRectAroundBlobs = (binaryImg, dstImg, minPxSize, fixedRectWidth) => 
     }
 };
 
-const drawRect = (image, rect, color, opts = { thickness: 2 }) =>
+exports.addImageOn = (image, rect) => {
+    console.log('rect!');
+    console.log(rect);
+    //TODO
+    image.putText('Detected face!', new cv.Point2(40, 50) , 20 , 1 , new cv.Vec2(255, 0), cv.LINE_8 , 2 , false )
+    // return matOverlayImage;
+};
+
+const drawRect = (image, rect, color, opts = { thickness: 2 }) => {
     image.drawRectangle(
         rect,
         color,
         opts.thickness,
         cv.LINE_8
     );
+}
 
 exports.drawRect = drawRect;
 exports.drawBlueRect = (image, rect, opts = { thickness: 2 }) =>
