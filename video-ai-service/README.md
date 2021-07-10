@@ -40,6 +40,6 @@ Another demo is the videoFaceDetection.js
 
 # WARNING
 
-This is a work in progess, there is something wrong with the transcoding now so it doesn't completely work
+This is a work in progess
 
 
